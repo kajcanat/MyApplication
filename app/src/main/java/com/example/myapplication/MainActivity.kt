@@ -40,6 +40,11 @@ class MainActivity : AppCompatActivity() {
         // todo create live templates
 
         // apply code changes
+
+        var message:String? = null
+        // double exclamation crashes the app
+        // val upper = message!!.uppercase()
+        // AndroidRuntime
     }
 
     private fun saySth() {
