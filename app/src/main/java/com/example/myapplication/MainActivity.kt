@@ -2,8 +2,12 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
+import android.widget.Toast
 import com.google.gson.GsonBuilder
+
+const val TAG = "my_log_tag"
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,9 +30,22 @@ class MainActivity : AppCompatActivity() {
         // shift + f6
         val newVar = "this is a string"
         println(newVar)
+
+        saySth()
+
+        Toast.makeText(this, "new msg", Toast.LENGTH_SHORT).show()
+
+        Log.i(TAG, "onCreate: a custom msg")
+        // 2021-10-12 11:52:41.332 19560-19560/com.example.myapplication I/my_log_tag: onCreate: a custom msg
+    }
+
+    private fun saySth() {
+        println("Sth")
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return super.onOptionsItemSelected(item)
     }
+
+
 }
