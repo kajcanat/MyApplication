@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
         println("Duplication")
         println("Duplication")
         println("Duplication")
+
+        // shift + f6
+        val newVar = "this is a string"
+        println(newVar)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
