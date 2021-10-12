@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         println("Duplication")
 
         // shift + f6
-        val newVar = "this is a string"
+        val newVar = "this is a string 2"
         println(newVar)
 
         saySth()
@@ -38,6 +38,8 @@ class MainActivity : AppCompatActivity() {
         Log.i(TAG, "onCreate: a custom msg")
         // 2021-10-12 11:52:41.332 19560-19560/com.example.myapplication I/my_log_tag: onCreate: a custom msg
         // todo create live templates
+
+        // apply code changes
     }
 
     private fun saySth() {
