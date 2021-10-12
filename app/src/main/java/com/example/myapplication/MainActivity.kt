@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
 
         // comment right ctrl + /
         // move ctrl + shift arrow
+        // ctrl + d
+        println("Duplication")
+        println("Duplication")
+        println("Duplication")
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
