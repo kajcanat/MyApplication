@@ -14,5 +14,7 @@ class MainActivity : AppCompatActivity() {
         val strUtil = StringUtility()
         println(strUtil.getAsString())
         // 2021-10-12 11:21:00.217 17222-17222/com.example.myapplication I/System.out: new str
+
+        // comment right ctrl + /
     }
 }
