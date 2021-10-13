@@ -45,10 +45,20 @@ class MainActivity : AppCompatActivity() {
         // double exclamation crashes the app
         // val upper = message!!.uppercase()
         // AndroidRuntime
+
+        loopNumbers()
     }
 
     private fun saySth() {
         println("Sth")
+    }
+
+    fun loopNumbers() {
+        var items = arrayListOf<String>("one", "two", "three")
+        // Evaluate expression
+        for(i in 0 until items.size) {
+            println(items[i])
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
