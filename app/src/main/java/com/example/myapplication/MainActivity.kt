@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         saySth()
 
-        Toast.makeText(this, "new msg", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "earth", Toast.LENGTH_SHORT).show()
 
         Log.i(TAG, "onCreate: a custom msg")
         // 2021-10-12 11:52:41.332 19560-19560/com.example.myapplication I/my_log_tag: onCreate: a custom msg
