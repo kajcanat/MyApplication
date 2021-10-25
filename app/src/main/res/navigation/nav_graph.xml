@@ -14,6 +14,38 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_detailFragment"
+            app:destination="@id/detailFragment">
+            <argument
+            android:name="param1"
+            app:argType="string"
+            android:defaultValue="earth" />
+        </action>
+        <action
+            android:id="@+id/action_FirstFragment_to_detailFragment2"
+            app:destination="@id/detailFragment">
+            <argument
+                android:name="param1"
+                app:argType="string"
+                android:defaultValue="mars" />
+        </action>
+        <action
+            android:id="@+id/action_FirstFragment_to_detailFragment3"
+            app:destination="@id/detailFragment">
+            <argument
+                android:name="param1"
+                app:argType="string"
+                android:defaultValue="jupiter" />
+        </action>
+        <action
+            android:id="@+id/action_FirstFragment_to_detailFragment4"
+            app:destination="@id/detailFragment">
+            <argument
+                android:name="param1"
+                app:argType="string"
+                android:defaultValue="saturn" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -25,4 +57,9 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.myapplication.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
 </navigation>
